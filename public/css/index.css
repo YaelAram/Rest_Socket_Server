@@ -1,0 +1,100 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    background-color: #F0EBE3;
+}
+
+p, h1, input[type="email"], input[type="password"], input[type="button"], input[type="submit"]{
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1.75;
+}
+
+input[type="email"], input[type="password"], input[type="button"], input[type="submit"]{
+    border-radius: 0.5rem;
+}
+
+label{
+    font-weight: lighter;
+}
+
+main, input[type="email"], input[type="password"]{
+    border: 0.125rem solid black;
+    background-color: white;
+}
+
+main{
+    border-radius: 8px;
+    box-shadow: 10px 5px 5px gray;
+    grid-column: 2;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
+
+h1, section{
+    grid-column: 2 / 6;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 0;
+    grid-row: 1;
+}
+
+.section_form{
+    grid-row: 2;
+    padding: 0.5rem 0;
+}
+
+.field_section, .button_section{
+    padding: 1rem 0;
+}
+
+.field_section, .button_section{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+}
+
+label, input[type="email"], input[type="password"], input[type="button"], input[type="submit"]{
+    grid-column: 1;
+}
+
+label, input[type="button"], input[type="submit"]{
+    grid-row: 1;
+}
+
+input[type="email"], input[type="password"]{
+    padding: 0.125rem 0.5rem;
+    grid-row: 2;
+}
+
+input[type="email"]:focus, input[type="password"]:focus{
+    font-weight: bolder;
+}
+
+input[type="button"], input[type="submit"]{
+    font-weight: bolder;
+    padding: 0.6rem 0.75rem;
+    font-size: larger;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.section_google{
+    grid-row: 3;
+    padding: auto;
+}
+
+.sign_out_google{
+    margin: 0.75rem 0 2rem;
+}

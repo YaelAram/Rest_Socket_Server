@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="./css/normalize-min.css">
+    <link rel="stylesheet" href="./css/chat.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="./socket.io/socket.io.js" defer></script>
+    <script src="./js/chat.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Welcome User 1</p>
+    </header>
+    <main>
+        <section class="active_users">
+            <h2>Online Users</h2>
+            <div class="active_users_list"></div>
+        </section>
+        <section class="chat">
+            <h2 id="user_name">User 2</h2>
+            <div class="chat_messages"></div>
+            <div class="new_message">
+                <input type="text" placeholder="Write something..." class="message" required autofocus >
+                <input type="button" value="Send" class="send_button">
+            </div>
+        </section>
+    </main>
+</body>
+</html>

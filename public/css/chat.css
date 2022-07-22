@@ -1,0 +1,145 @@
+html{
+    min-height: 100%;
+}
+
+header{
+    background-color: black;
+    color: white;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+p{
+    margin: 0;
+    font-size: larger;
+    padding: 1rem 1rem;
+}
+
+p, input[type="text"], .send_button{
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1.75;
+}
+
+main{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+}
+
+.active_users, .chat{
+    margin: 1rem;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+}
+
+.active_users{
+    grid-column: 1;
+}
+
+.chat{
+    grid-column: 2 / 5;
+}
+
+h2{
+    height: 2rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding: 1rem;
+    grid-column: 1;
+    grid-row: 1;
+    border-radius: 0.5rem;
+    border: 0.125rem solid black;
+}
+
+h4{
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.active_users_list, .chat_messages{
+    grid-column: 1;
+    overflow-y: auto;
+}
+
+.active_users_list{
+    grid-row: 2 / 4;
+}
+
+.chat_messages{
+    grid-row: 2;
+}
+
+.userItem{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.125rem solid black;
+    margin-bottom: 0.5rem;
+}
+
+.userItem:hover{
+    color: white;
+    background-color: black;
+}
+
+.user_message{
+    padding: 0 1rem;
+}
+
+.from{
+    color: black;
+    font-weight: bolder;
+}
+
+.new_message{
+    position: absolute;
+    bottom: 0;
+    width: 73%;
+    margin-bottom: 1rem;
+    grid-row: 3;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5rem;
+}
+
+.message, .send_button{
+    grid-row: 1;
+}
+
+.message{
+    grid-column: 1 / 6;
+}
+
+.send_button{
+    grid-column: 6;
+}
+
+input[type="text"], .send_button{
+    border: 0.125rem solid black;
+    border-radius: 0.5rem;
+}
+
+input[type="text"]{
+    padding: 0.125rem 0.5rem;
+}
+
+input[type="text"]:focus{
+    font-weight: bolder;
+}
+
+.send_button{
+    font-weight: bolder;
+    padding: 0.6rem 0.75rem;
+    font-size: larger;
+}
+
+.send_button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
