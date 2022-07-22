@@ -69,7 +69,7 @@ const validateJWT = async () => {
     const auth_token = localStorage.getItem( TOKEN_NAME ) ?? '';
     if( !auth_token ) window.location = 'index.html';
 
-    const resp = await fetch( 'http://192.168.1.112:8080/api/auth/', {
+    const resp = await fetch( 'https://rest-socket-server.herokuapp.com/api/auth/', {
         method: 'GET',
         headers: { auth_token },
     } );

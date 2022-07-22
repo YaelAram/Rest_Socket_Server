@@ -3,7 +3,7 @@ const password = document.querySelector( '#password_field' );
 
 function handleCredentialResponse( response ) {
     const body = { 'id_token': response.credential };
-    fetch( 'http://192.168.1.112:8080/api/auth/google', {
+    fetch( 'https://rest-socket-server.herokuapp.com/api/auth/google', {
         method: 'POST',
         headers: { 
             'Content-Type': 'application/json'
@@ -30,7 +30,7 @@ const signOutFunction = () => {
 const logIn = async ( evt ) => {
     evt.preventDefault();
     const body = { email: email.value, password: password.value };
-    const resp = await fetch( 'http://192.168.1.112:8080/api/auth/login', {
+    const resp = await fetch( 'https://rest-socket-server.herokuapp.com/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify( body )
